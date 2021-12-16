@@ -1,0 +1,84 @@
+@import "./fonts.scss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+a {
+    &.link {
+        text-decoration: none;
+        color: #353535;
+        transition: 0.3s;
+        font-weight: 400;
+        font-size: 1.03em;
+        cursor: pointer;
+        &:hover {
+            @apply text-blue-500;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    a {
+        margin-right: 15px;
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+    button {
+        margin-right: 15px;
+    }
+}
+
+.slider-pagination {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        @apply bg-blue-500;
+        margin-left: 6px;
+        transition: 0.4s;
+        &:last-child {
+            margin-left: 0px;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        width: 25px;
+        @apply bg-blue-500;
+    }
+}
+
+.infos {
+    @apply justify-center;
+    ul {
+        list-style: none;
+        margin-right: 12px;
+        li:first-child {
+            font-size: 22px;
+        }
+
+        li:last-child {
+            font-size: 14px;
+        }
+    }
+}
+
+.will {
+    li {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .infos {
+        margin-top: 50px;
+    }
+    .title-foo {
+        margin-top: 40px !important;
+    }
+}

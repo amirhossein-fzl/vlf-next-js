@@ -74,6 +74,34 @@ nav {
     }
 }
 
+.sectionTitle {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Aviny';
+    font-size: 2rem;
+    font-weight: 700;
+    color: #263238;
+    b {
+        display: block;
+        -ms-flex: 1;
+        flex: 1;
+        height: 4px;
+        opacity: 0.4;
+        background-color: #263238;
+    }
+}
+
+.sectionTitleCenter {
+    span {
+        text-align: center;
+        margin: 0 15px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .infos {
         margin-top: 50px;

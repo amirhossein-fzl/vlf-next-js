@@ -8,7 +8,6 @@ import NProgress from "../src/nprogress";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ScrollTop from "../components/ScrollTop";
-import ElevationScroll from "../components/ElevationScroll";
 
 // Styles
 import theme from "../styles/theme";
@@ -45,9 +44,7 @@ function MyApp(props) {
                 <ThemeProvider theme={theme}>
                     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
                     <CssBaseline />
-                    <ElevationScroll {...props} threshold={30}>
-                        <Component {...pageProps} />
-                    </ElevationScroll>
+                    <Component {...pageProps} />
                     <ScrollTop {...props}>
                         <Fab color="secondary" size="medium" aria-label="scroll back to top">
                             <KeyboardArrowUpIcon fontSize="large" />

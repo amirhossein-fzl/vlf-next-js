@@ -10,6 +10,7 @@ import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import Drawer from "@mui/material/Drawer";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ButtonBase from "@mui/material/ButtonBase";
+import ElevationScroll from '../ElevationScroll';
 
 const nav = [
     {
@@ -43,7 +44,7 @@ const DisplayMobile = (props) => {
     };
 
     return (
-        // <ElevationScroll {...props} threshold={50}>
+        <ElevationScroll {...props} threshold={50}>
             <AppBar position="sticky">
                 <Grid container direction="row" justifyContent="space-between" alignItems="center">
                     <IconButton color="inherit" aria-label="menu" aria-haspopup="true" onClick={toggleMenu}>
@@ -121,7 +122,7 @@ const DisplayMobile = (props) => {
                     </>
                 </Grid>
             </AppBar>
-        // </ElevationScroll>
+        </ElevationScroll>
     );
 };
 

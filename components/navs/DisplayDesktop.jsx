@@ -13,6 +13,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import SearchResult from '../SearchResult';
+import ElevationScroll from '../ElevationScroll';
 
 const nav = [
     {
@@ -56,7 +57,7 @@ const DisplayDesktop = (props) => {
 
     return (
         <>
-            {/* <ElevationScroll {...props} threshold={30}> */}
+            <ElevationScroll {...props} threshold={30}>
                 <AppBar color="white" elevation={0} position="sticky" className="py-[5px] px-[15px]">
                     <Container>
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
@@ -147,7 +148,7 @@ const DisplayDesktop = (props) => {
                         </Grid>
                     </Container>
                 </AppBar>
-            {/* </ElevationScroll> */}
+            </ElevationScroll>
         </>
     );
 };

@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import BestTeacher from '../components/BestTeacher';
 import Avatar from '@mui/material/Avatar';
+import Image from 'next/image';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
@@ -239,6 +240,21 @@ export default function () {
                                 <BestTeacher />
                             </Col>
 
+                        </Row>
+                    </Container>
+                </>
+
+                <>
+                    <Title title="مدرس شوید !" />
+                    <Container className="md:w-[90%]">
+                        <Row>
+                            <Col lg={6}>
+                                <Image src="/svg/become-teacher.svg" width={513} height={327} />
+                            </Col>
+                            <Col lg={6}>
+                                <p> بله ! شما میتوانید در مجموعه ویرولرن در هر حوزه ای، تدریس کنید و به درآمد های عالی دست پیدا کنید ! هدف مجموعه ویرولرن، تکثیر دانش افراد متخصص، به افراد مبتدی است. </p>
+                                <Button className="!mt-10" color="error" variant="outlined" size="small">مدرس شوید !</Button>
+                            </Col>
                         </Row>
                     </Container>
                 </>

@@ -102,6 +102,31 @@ nav {
     }
 }
 
+.SliderPagination {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        width: 25px;
+        height: 13px;
+        border-radius: 15px;
+        cursor: pointer;
+        @apply border;
+        @apply border-solid;
+        @apply border-blue-500;
+        margin-left: 6px;
+        transition: .4s;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 35px;
+        @apply bg-blue-500;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .infos {
         margin-top: 50px;

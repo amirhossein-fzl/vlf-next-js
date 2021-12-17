@@ -2,13 +2,15 @@ import React from "react";
 import Header from "../components/Header";
 import Head from "next/head";
 import Title from "../components/Title";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import CategoryCard from '../components/CategoryCard';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import CategoryCard from "../components/CategoryCard";
+import Slider from '../components/Slider';
+// import dynamic from 'next/dynamic';
+// const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
 export default function () {
-
     let categories = [
         {
             title: "هوش مصنوعی",
@@ -83,18 +85,25 @@ export default function () {
             <Header isHome={true} />
 
             <main>
-                <Title title="مسیر خود را انتخاب کنید !" />
-                <Container>
-                    <Row>
-                        {categories.map((category, key) => {
-                            return (
-                                <Col lg={2} sm={4} xs={6} className="flex justify-center items-center" key={key}>
-                                    <CategoryCard icon={category.icon} title={category.title} link={category.link} />
-                                </Col>
-                            );
-                        })}
-                    </Row>
-                </Container>
+                <>
+                    <Title title="مسیر خود را انتخاب کنید !" />
+                    <Container>
+                        <Row>
+                            {categories.map((category, key) => {
+                                return (
+                                    <Col lg={2} sm={4} xs={6} className="flex justify-center items-center" key={key}>
+                                        <CategoryCard icon={category.icon} title={category.title} link={category.link} />
+                                    </Col>
+                                );
+                            })}
+                        </Row>
+                    </Container>
+                </>
+
+                <>
+                    <Title title="پیشنهادات ویژه" />
+                    <Slider />
+                </>
             </main>
         </>
     );

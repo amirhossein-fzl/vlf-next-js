@@ -22,7 +22,7 @@ function ScrollTop(props) {
 
     return (
         <Zoom in={trigger}>
-            <Tooltip title="بازگشت به بالای صفحه" placement="top" classes={{ tooltip: "!bg-blue-500 !text-sm" }} interactive="true">
+            <Tooltip title="بازگشت به بالای صفحه" placement="top" classes={{ tooltip: "!bg-blue-500 !text-[14px]" }} interactive="true">
                 <div onClick={handleClick} role="presentation" className="fixed bottom-10 right-10 z-[999]">
                     {children}
                 </div>

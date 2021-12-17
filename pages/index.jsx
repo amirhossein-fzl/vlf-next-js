@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import BestTeacher from '../components/BestTeacher';
 import Avatar from '@mui/material/Avatar';
 import Image from 'next/image';
+import PostCard from '../components/PostCard';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
@@ -256,6 +257,78 @@ export default function () {
                                 <Button className="!mt-10" color="error" variant="outlined" size="small">مدرس شوید !</Button>
                             </Col>
                         </Row>
+                    </Container>
+                </>
+
+                <>
+                    <Title title="وبلاگ ویرولرن" />
+                    <Container>
+                        <Row>
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="ویژگی جدید در ASP.Net Core 5.0"
+                                img="/img/posts/Asp_net_core5.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'امیرحسین فضلی', link: '#' }}
+                                views={95000}
+                            />
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="نکات مهم و کلیدی در طراحی لوگو"
+                                img="/img/posts/nmvldt-logo.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'میلاد محمدی', link: '#' }}
+                                views={95000}
+                            />
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="مهم ترین تکنیک های سئو"
+                                img="/img/posts/seo.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'امیرحسین فضلی', link: '#' }}
+                                views={95000}
+                            />
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="چند نکته مهم برای امنیت در شبکه های اجتماعی"
+                                img="/img/posts/social_network.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'میلاد محمدی', link: '#' }}
+                                views={95000}
+                            />
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="دستیار صوتی چیست؟"
+                                img="/img/posts/voice-assistant.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'امیرحسین فضلی', link: '#' }}
+                                views={95000}
+                            />
+
+                            <PostCard
+                                grid={{ lg: 4, md: 6 }}
+                                link="#"
+                                title="5 مورد از بهترین Vscode Extention ها برای توسعه دهندگان جاوااسکریپت"
+                                img="/img/posts/VS_Code_Extension.png"
+                                description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+                                author={{ name: 'میلاد محمدی', link: '#' }}
+                                views={95000}
+                            />
+
+                        </Row>
+                        <Grid container justifyContent="center" className="mt-10">
+                            <Button variant="outlined" color="secondary">مشاهده بیشتر</Button>
+                        </Grid>
                     </Container>
                 </>
 

@@ -16,7 +16,7 @@ const SearchResult = (props) => {
                     <Image src={props.image} alt="result-image" width={130} height={93} />
                     <div className="flex py-2.5 px-4 flex-col">
                         <Link href={props.link} passHref >
-                            <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: "!bg-blue-500 !text-sm", arrow: "!text-blue-500" }} interactive="true">
+                            <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: "!bg-blue-500 !text-[14px]", arrow: "!text-blue-500" }} interactive="true">
                                 <a className="text-base max-w-[256px] overflow-hidden text-ellipsis block whitespace-nowrap">{props.title}</a>
                             </Tooltip>
                         </Link>

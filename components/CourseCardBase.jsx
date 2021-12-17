@@ -18,7 +18,7 @@ function CourseCardBase(props) {
             <CardContent className="pt-2 px-2.5 pb-0">
 
                 <Link href={props.link} passHref>
-                    <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: '!text-sm !bg-blue-500', arrow: '!text-blue-500' }} >
+                    <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: '!text-[14px] !bg-blue-500', arrow: '!text-blue-500' }} >
                         <a className="text-base font-medium overflow-ellipsis overflow-hidden block whitespace-nowrap cursor-pointer">{props.title}</a>
                     </Tooltip>
                 </Link>

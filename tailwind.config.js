@@ -34,9 +34,10 @@ module.exports = {
             '2xl': '1400px',
             // => @media (min-width: 1536px) { ... }
         },
-        container: {
-            center: true,
-        }
+        // container: {
+        //     center: true,
+        // }
+        container: false,
     },
     variants: {
         extend: {},

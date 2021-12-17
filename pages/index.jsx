@@ -10,6 +10,9 @@ import Slider from '../components/Slider';
 import CourseCard from '../components/CourseCard';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import BestTeacher from '../components/BestTeacher';
+import Avatar from '@mui/material/Avatar';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
@@ -197,6 +200,46 @@ export default function () {
                         <Grid container justifyContent="center" className="mt-10">
                             <Button variant="outlined" color="secondary">مشاهده بیشتر</Button>
                         </Grid>
+                    </Container>
+                </>
+
+                <>
+                    <Title title="مدرس برتر هفته" />
+                    <Container className="mt-5">
+                        <Row>
+
+                            <Col lg={4} sm={12} xs={12}>
+                                <Grid container direction="row" spacing={3} alignItems="center" >
+                                    <Grid item>
+                                        <Avatar src="/img/Amir-developer-avatar.jpg" sx={{ width: 100, height: 100 }} />
+                                    </Grid>
+                                    <Grid item>
+                                        <Grid container direction="column" spacing={1}>
+
+                                            <Grid item>
+                                                <Typography variant="h4">امیرحسین فضلی</Typography>
+                                            </Grid>
+
+                                            <Grid item>
+                                                <Typography variant="subtitle1">بیوگرافی من</Typography>
+                                            </Grid>
+
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid container direction="column" className="!mt-10">
+                                    <Typography variant="body" textAlign="justify">
+                                        از تیر ماه سال 98 یادگیری برنامه نویسی را شروع کردم. از سال 98 تا الان، به تسلط بالایی در برنامه نویسی رسیدم و اکنون در خدمت شما با مجموعه ویرولرن هستم تا دانشم را به شما انتقال دهم. از فعالیت در مجموعه ویرولرن حس خوبی دارم.
+                                    </Typography>
+                                </Grid>
+                                <Button className="!mt-10" color="primary" variant="contained">مشاهده صفحه مدرس</Button>
+                            </Col>
+
+                            <Col lg={8} sm={12} xs={12} className="pr-10 mt-10 lg:mt-0">
+                                <BestTeacher />
+                            </Col>
+
+                        </Row>
                     </Container>
                 </>
 

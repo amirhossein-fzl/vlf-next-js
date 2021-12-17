@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay, Pagination } from 'swiper';
-import CourseCardBase from './CourseCardBaseBase';
+import CourseCardBase from './CourseCardBase';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 

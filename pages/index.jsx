@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Head from "next/head";
 import Title from "../components/Title";
@@ -15,10 +15,20 @@ import BestTeacher from '../components/BestTeacher';
 import Avatar from '@mui/material/Avatar';
 import Image from 'next/image';
 import PostCard from '../components/PostCard';
+import EmailSvg from '../public/svg/EmailSvg';
+import TextField from '@mui/material/TextField';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
 export default function () {
+
+    const [validEmail, setValidEmail] = useState(false);
+
+    function validateEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return setValidEmail(!re.test(String(email).toLowerCase()));
+    }
+
     let categories = [
         {
             title: "هوش مصنوعی",
@@ -328,6 +338,19 @@ export default function () {
                         </Row>
                         <Grid container justifyContent="center" className="mt-10">
                             <Button variant="outlined" color="secondary">مشاهده بیشتر</Button>
+                        </Grid>
+                    </Container>
+                </>
+
+                <>
+                    <Container>
+                        <Grid className="mt-16" container direction="column" justifyContent="center" alignItems="center">
+                            <EmailSvg className="w-[100pt] text-amber-500" />
+                            <p className="mt-6 mb-8 text-center">عضو خبرنامه ما شوید تا از آخرین تخفیف ها و اطلاعیه ها جا نمانید !</p>
+                            <Col lg={4} sm={6} xs={10}>
+                                <TextField error={validEmail} fullWidth id="outlined-basic" type="email" label="ایمیل شما" placeholder="ایمیل خود را اینجا وارد کنید ..." onChange={(e) => validateEmail(e.target.value)} size="small" variant="outlined" />
+                            </Col>
+                            ‌<Button variant="contained" color="primary">عضویت در خبرنامه</Button>
                         </Grid>
                     </Container>
                 </>

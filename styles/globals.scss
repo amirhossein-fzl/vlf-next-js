@@ -69,24 +69,29 @@ nav {
     }
 }
 
-.infos {
-    @apply justify-center;
-    ul {
-        list-style: none;
-        margin-right: 12px;
-        li:first-child {
-            font-size: 22px;
-        }
-
-        li:last-child {
-            font-size: 14px;
+footer {
+    .infos {
+        @apply justify-center;
+        @apply mt-10;
+        @apply md:mt-0;
+        
+        ul {
+            list-style: none;
+            margin-right: 12px;
+            li:first-child {
+                font-size: 22px;
+            }
+    
+            li:last-child {
+                font-size: 14px;
+            }
         }
     }
-}
-
-.will {
-    li {
-        margin-top: 15px;
+    .will {
+        @apply mt-6;
+        li {
+            margin-top: 15px;
+        }
     }
 }
 

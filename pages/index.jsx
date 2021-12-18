@@ -17,6 +17,7 @@ import Image from 'next/image';
 import PostCard from '../components/PostCard';
 import EmailSvg from '../public/svg/EmailSvg';
 import TextField from '@mui/material/TextField';
+import Footer from '../components/Footer';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
@@ -356,6 +357,9 @@ export default function () {
                 </>
 
             </main>
+
+            <Footer />
+
         </>
     );
 }

@@ -20,13 +20,13 @@
 }
 
 a {
+    cursor: pointer;
     &.link {
         text-decoration: none;
         color: #353535;
         transition: 0.3s;
         font-weight: 400;
         font-size: 1.03em;
-        cursor: pointer;
         &:hover {
             @apply text-blue-500;
         }
@@ -74,14 +74,14 @@ footer {
         @apply justify-center;
         @apply mt-10;
         @apply md:mt-0;
-        
+
         ul {
             list-style: none;
             margin-right: 12px;
             li:first-child {
                 font-size: 22px;
             }
-    
+
             li:last-child {
                 font-size: 14px;
             }
@@ -102,7 +102,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-family: 'Aviny';
+    font-family: "Aviny";
     font-size: 2rem;
     font-weight: 700;
     color: #263238;
@@ -136,7 +136,7 @@ footer {
         @apply border-solid;
         @apply border-blue-500;
         margin-left: 6px;
-        transition: .4s;
+        transition: 0.4s;
         &:last-child {
             margin-left: 0;
         }
@@ -145,6 +145,29 @@ footer {
     .swiper-pagination-bullet-active {
         width: 35px;
         @apply bg-blue-500;
+    }
+}
+
+.article-body {
+    margin-top: 50px;
+    padding: 20px;
+    height: auto;
+    p {
+        text-align: justify;
+        margin: 15px 0px;
+        line-height: 40px;
+    }
+
+    h2 {
+        margin: 25px 0;
+    }
+
+    a {
+        color: #fca311;
+        transition: 0.5s;
+        &:hover {
+            color: #0096c7;
+        }
     }
 }
 

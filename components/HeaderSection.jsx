@@ -21,7 +21,7 @@ function HeaderSection(props) {
                     <SearchAjax className="mt-12" />
                 </Grid>
 
-                <Grid lg={6} md={6} sm={12} item container justifyContent="center" alignItems="flex-start" className="sm:!mt-10 md:!mt-0" >
+                <Grid lg={6} md={6} sm={12} item container justifyContent="center" alignItems="flex-start" className="!mt-10 md:!mt-0" >
                     <Image src="/svg/online-course.svg" alt="Online course image" width={600} height={374} />
                 </Grid>
 

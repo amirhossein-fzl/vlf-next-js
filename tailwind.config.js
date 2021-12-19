@@ -40,10 +40,12 @@ module.exports = {
         // container: {
         //     center: true,
         // }
-        container: false,
     },
     variants: {
         extend: {},
+    },
+    corePlugins: {
+        container: false,
     },
     plugins: [require('@tailwindcss/line-clamp'),],
 }

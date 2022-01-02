@@ -5,6 +5,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['IRANSans'],
+            },
             borderRadius: {
                 'theme': '8px',
             },

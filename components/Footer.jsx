@@ -27,7 +27,7 @@ export default function Footer() {
     const FromatNumber = (num) => new Intl.NumberFormat().format(num);
     return (
         <>
-            <Grid className="mt-5 mb-5" container justifyContent="center">
+            <Grid className="mt-16 mb-10" container justifyContent="center">
                 <Fab color="primary" size="large" onClick={toTop}>
                     <KeyboardArrowUpIcon fontSize="large" />
                 </Fab>

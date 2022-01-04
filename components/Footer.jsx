@@ -39,10 +39,10 @@ export default function Footer() {
                             <Grid container direction="row" justifyContent="center">
                                 <VideoCourcesSvg />
                                 <ul>
-                                    <li><CountUp end={5} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> دوره</li>
                                     <li>
-                                        تعداد دوره ها
+                                        <CountUp end={5} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> دوره
                                     </li>
+                                    <li>تعداد دوره ها</li>
                                 </ul>
                             </Grid>
                         </Col>
@@ -51,10 +51,10 @@ export default function Footer() {
                             <Grid container direction="row" justifyContent="center">
                                 <CapStudentSvg />
                                 <ul>
-                                    <li><CountUp end={180} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> دانشجو</li>
                                     <li>
-                                        تعداد دانشجویان
+                                        <CountUp end={180} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> دانشجو
                                     </li>
+                                    <li>تعداد دانشجویان</li>
                                 </ul>
                             </Grid>
                         </Col>
@@ -63,10 +63,10 @@ export default function Footer() {
                             <Grid container direction="row" justifyContent="center">
                                 <ArticleSvg />
                                 <ul>
-                                    <li><CountUp end={53} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> مقاله</li>
                                     <li>
-                                        تعداد مطالب وبلاگ
+                                        <CountUp end={53} duration={5} easingFn="easeInOutCubic" formattingFn={(number) => FromatNumber(number)} /> مقاله
                                     </li>
+                                    <li>تعداد مطالب وبلاگ</li>
                                 </ul>
                             </Grid>
                         </Col>
@@ -78,13 +78,9 @@ export default function Footer() {
                                 درباره ما
                             </Typography>
 
-                            <p className="text-justify mt-6">
-                                از سال 1399 شروع کرده ایم و همواره برای بالا بردن سطح دانش همه شما عزیزان، به صورت شبانه روزی تلاش میکنیم. در مجموعه ویرولرن، بهترین اساتید بهترین دوره های آموزش را برای شما میسازند و آینده کاری شما را ضمانت میکنند.
-                            </p>
+                            <p className="text-justify mt-6">از سال 1399 شروع کرده ایم و همواره برای بالا بردن سطح دانش همه شما عزیزان، به صورت شبانه روزی تلاش میکنیم. در مجموعه ویرولرن، بهترین اساتید بهترین دوره های آموزش را برای شما میسازند و آینده کاری شما را ضمانت میکنند.</p>
 
-                            <p className="text-justify mt-6">
-                                {'سازندگان این مجموعه، با شعار " آموزش برای همه " و با هدف تکثیر علم و دانش اساتید مجرب به همه اقشار جامعه، به فعالیت خود ادامه می دهند.'}
-                            </p>
+                            <p className="text-justify mt-6">{'سازندگان این مجموعه، با شعار " آموزش برای همه " و با هدف تکثیر علم و دانش اساتید مجرب به همه اقشار جامعه، به فعالیت خود ادامه می دهند.'}</p>
                         </Col>
 
                         <Col lg={4} md={4} className="text-center !mt-10 md:mt-0">
@@ -94,7 +90,8 @@ export default function Footer() {
                             <ul className="will">
                                 <li>آموزش پایتون مقدماتی</li>
                                 <li>آموزش پایتون پیشرفته</li>
-                                <li>آموزش کامل php</li><li>آموزش فریمورک django از صفر تا صد</li>
+                                <li>آموزش کامل php</li>
+                                <li>آموزش فریمورک django از صفر تا صد</li>
                                 <li>آموزش Asp.net Core</li>
                             </ul>
                         </Col>
@@ -108,7 +105,6 @@ export default function Footer() {
                                 <img src="/img/samandehi.png" alt="ساماندهی" />
                             </Grid>
                         </Col>
-
                     </Row>
                 </Container>
             </footer>
@@ -130,4 +126,4 @@ export default function Footer() {
             </Grid>
         </>
     );
-};
+}

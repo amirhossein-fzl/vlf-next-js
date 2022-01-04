@@ -20,7 +20,6 @@ export default function PostCard(props) {
             <Card elevation={3} className="mt-5">
                 <img src={props.img} className="w-full h-auto" alt={props.title} />
                 <CardContent className="pt-2 px-2.5">
-
                     <Link href={props.link} passHref>
                         <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: '!bg-blue-500 !text-[14px]', arrow: '!text-blue-500' }} interactive="true">
                             <a className="text-base font-medium overflow-hidden text-ellipsis block whitespace-nowrap cursor-pointer">{props.title}</a>
@@ -45,11 +44,9 @@ export default function PostCard(props) {
                             <VisibilityOutlinedIcon fontSize="small" />
                         </span>
                     </Grid>
-
                 </CardContent>
                 <CardActions className="!mt-4 border-t border-t-solid border-t-stone-500">
                     <Grid container justifyContent="space-between">
-
                         <IconButton size="small" color="primary">
                             <BookmarkBorderOutlinedIcon />
                         </IconButton>
@@ -59,10 +56,9 @@ export default function PostCard(props) {
                                 ادامه مطلب
                             </Button>
                         </Link>
-
                     </Grid>
                 </CardActions>
             </Card>
         </Col>
     );
-};
+}

@@ -1,33 +1,33 @@
-import React, { useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Link from "next/link";
-import Image from "next/image";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import Drawer from "@mui/material/Drawer";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import ButtonBase from "@mui/material/ButtonBase";
+import React, { useState } from 'react';
+import AppBar from '@mui/material/AppBar';
+import Link from 'next/link';
+import Image from 'next/image';
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import Drawer from '@mui/material/Drawer';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import ButtonBase from '@mui/material/ButtonBase';
 import ElevationScroll from '../ElevationScroll';
 
 const nav = [
     {
-        title: "صفحه اصلی",
-        link: "/",
+        title: 'صفحه اصلی',
+        link: '/',
     },
     {
-        title: "وبلاگ",
-        link: "#",
+        title: 'وبلاگ',
+        link: '#',
     },
     {
-        title: "درباره ما",
-        link: "/about",
+        title: 'درباره ما',
+        link: '/about',
     },
     {
-        title: "تماس باما",
-        link: "#",
+        title: 'تماس باما',
+        link: '#',
     },
 ];
 
@@ -72,7 +72,7 @@ const DisplayMobile = (props) => {
                                     {nav.map((item, key) => {
                                         return (
                                             <Link href={item.link} passHref key={key}>
-                                                <ButtonBase className="!bg-gray-100 !shadow-sm duration-200 hover:!bg-blue-500 hover:text-white !mt-3 px-2 !py-1.5 !rounded-lg text-base" TouchRippleProps={{ classes: { ripple: "text-blue-500" } }}>
+                                                <ButtonBase className="!bg-gray-100 !shadow-sm duration-200 hover:!bg-blue-500 hover:text-white !mt-3 px-2 !py-1.5 !rounded-lg text-base" TouchRippleProps={{ classes: { ripple: 'text-blue-500' } }}>
                                                     {item.title}
                                                 </ButtonBase>
                                             </Link>
@@ -106,7 +106,7 @@ const DisplayMobile = (props) => {
                                 {nav.map((item, key) => {
                                     return (
                                         <Link href={item.link} passHref key={key}>
-                                            <ButtonBase className="!bg-gray-100 !shadow-sm duration-200 hover:!bg-blue-500 hover:text-white !mt-3 px-2 !py-1.5 !rounded-lg text-base" TouchRippleProps={{ classes: { ripple: "text-blue-500" } }}>
+                                            <ButtonBase className="!bg-gray-100 !shadow-sm duration-200 hover:!bg-blue-500 hover:text-white !mt-3 px-2 !py-1.5 !rounded-lg text-base" TouchRippleProps={{ classes: { ripple: 'text-blue-500' } }}>
                                                 {item.title}
                                             </ButtonBase>
                                         </Link>

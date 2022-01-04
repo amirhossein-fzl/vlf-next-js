@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import Col from "react-bootstrap/Col";
+import React from 'react';
+import Card from '@mui/material/Card';
+import Col from 'react-bootstrap/Col';
 import CourseCardBase from './CourseCardBase';
 
 export default function CourseCard(props) {

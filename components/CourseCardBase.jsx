@@ -1,24 +1,23 @@
-import React from "react";
-import CardContent from "@mui/material/CardContent";
-import Tooltip from "@mui/material/Tooltip";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import CardActions from "@mui/material/CardActions";
-import Zoom from "@mui/material/Zoom";
-import Link from "next/link";
-import PersonIcon from "@mui/icons-material/Person";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import React from 'react';
+import CardContent from '@mui/material/CardContent';
+import Tooltip from '@mui/material/Tooltip';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import CardActions from '@mui/material/CardActions';
+import Zoom from '@mui/material/Zoom';
+import Link from 'next/link';
+import PersonIcon from '@mui/icons-material/Person';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 function CourseCardBase(props) {
     return (
         <>
-            {props.discount ? (<img src="/svg/discount.svg" alt="" className="w-15 h-auto absolute top--20 left--15 select-none" />) : null}
+            {props.discount ? <img src="/svg/discount.svg" alt="" className="w-15 h-auto absolute top--20 left--15 select-none" /> : null}
             <img src={props.img} alt={props.title} className="w-full h-auto" />
             <CardContent className="pt-2 px-2.5 pb-0">
-
                 <Link href={props.link} passHref>
-                    <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: '!text-[14px] !bg-blue-500', arrow: '!text-blue-500' }} >
+                    <Tooltip TransitionComponent={Zoom} title={props.title} placement="top" arrow classes={{ tooltip: '!text-[14px] !bg-blue-500', arrow: '!text-blue-500' }}>
                         <a className="text-base font-medium overflow-ellipsis overflow-hidden block whitespace-nowrap cursor-pointer">{props.title}</a>
                     </Tooltip>
                 </Link>
@@ -36,7 +35,6 @@ function CourseCardBase(props) {
                     <span className="ml-1.5 text-xl">{new Intl.NumberFormat().format(props.price)}</span>
                     تومان
                 </Typography>
-
             </CardContent>
             <CardActions>
                 <Grid container justifyContent="space-between" alignItems="center">

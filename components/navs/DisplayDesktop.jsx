@@ -6,10 +6,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import Popover from '@mui/material/Popover';
 import InputBase from '@mui/material/InputBase';
-import LinearProgress from "@mui/material/LinearProgress";
+import LinearProgress from '@mui/material/LinearProgress';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import SearchResult from '../SearchResult';
@@ -17,20 +17,20 @@ import ElevationScroll from '../ElevationScroll';
 
 const nav = [
     {
-        title: "صفحه اصلی",
-        link: "/",
+        title: 'صفحه اصلی',
+        link: '/',
     },
     {
-        title: "وبلاگ",
-        link: "#",
+        title: 'وبلاگ',
+        link: '#',
     },
     {
-        title: "درباره ما",
-        link: "/about",
+        title: 'درباره ما',
+        link: '/about',
     },
     {
-        title: "تماس باما",
-        link: "#",
+        title: 'تماس باما',
+        link: '#',
     },
 ];
 
@@ -49,7 +49,7 @@ const DisplayDesktop = (props) => {
     };
 
     const openSearch = Boolean(anchorEl);
-    const id = openSearch ? "search-popover" : undefined;
+    const id = openSearch ? 'search-popover' : undefined;
 
     const TabPanel = (props) => {
         return tab == props.tab ? <div className="m-2.5 flex flex-col">{props.children}</div> : null;
@@ -83,16 +83,16 @@ const DisplayDesktop = (props) => {
                                 </IconButton>
 
                                 <>
-                                    <Popover id={id} open={openSearch} anchorEl={anchorEl} onClose={closeSearch} anchorOrigin={{ vertical: "bottom", horizontal: "center" }} transformOrigin={{ vertical: "top", horizontal: "center" }} elevation={3}>
+                                    <Popover id={id} open={openSearch} anchorEl={anchorEl} onClose={closeSearch} anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} transformOrigin={{ vertical: 'top', horizontal: 'center' }} elevation={3}>
                                         <div className="rounded-theme bg-blue-200 my-1.5 mx-auto w-fit flex items-center">
                                             <InputBase
                                                 placeholder="سرچ ..."
                                                 classes={{
-                                                    root: "!text-blue-500",
-                                                    input: "!p-2 !pl-1.5 duration-200 !w-full !w-[18ch] focus:!w-[24ch]",
+                                                    root: '!text-blue-500',
+                                                    input: '!p-2 !pl-1.5 duration-200 !w-full !w-[18ch] focus:!w-[24ch]',
                                                 }}
                                                 autoFocus={true}
-                                                inputProps={{ "aria-label": "search" }}
+                                                inputProps={{ 'aria-label': 'search' }}
                                             />
 
                                             <div className="px-1 h-full flex items-center justify-center z-[1000]">

@@ -30,9 +30,7 @@ const About = () => {
                     <Grid container justifyContent="center" className="mt-4">
                         <Breadcrumb active="درباره ما">
                             <NextLink href="/">
-                                <Link underline="hover" >
-                                    خانه
-                                </Link>
+                                <Link underline="hover">خانه</Link>
                             </NextLink>
                         </Breadcrumb>
                     </Grid>
@@ -67,7 +65,6 @@ const About = () => {
                     <>
                         <Title title="اعضای تیم" />
                         <Grid container>
-
                             <Grid item lg={6} md={6} sm={12} xs={12}>
                                 <Grid container spacing={2} direction="column" alignItems="center">
                                     <Grid item>
@@ -75,7 +72,9 @@ const About = () => {
                                     </Grid>
                                     <Grid item>
                                         <Typography variant="h4">امیرحسین فضلی</Typography>
-                                        <Typography className="!mt-2 text-center" variant="body" component="p">هم بنیان گذار</Typography>
+                                        <Typography className="!mt-2 text-center" variant="body" component="p">
+                                            هم بنیان گذار
+                                        </Typography>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -87,19 +86,19 @@ const About = () => {
                                     </Grid>
                                     <Grid item>
                                         <Typography variant="h4">میلاد محمدی</Typography>
-                                        <Typography className="!mt-2 text-center" variant="body" component="p">هم بنیان گذار</Typography>
+                                        <Typography className="!mt-2 text-center" variant="body" component="p">
+                                            هم بنیان گذار
+                                        </Typography>
                                     </Grid>
                                 </Grid>
                             </Grid>
-
                         </Grid>
                     </>
-
                 </Continer>
             </main>
             <Footer />
         </>
     );
-}
+};
 
 export default About;

@@ -7,11 +7,9 @@ const Breadcrumb = (props) => {
     return (
         <Breadcrumbs separator={<NavigateBeforeIcon fontSize="small" />} aria-label="breadcrumb">
             {props.children}
-            <Typography color="text.primary">
-                {props.active}
-            </Typography>
+            <Typography color="text.primary">{props.active}</Typography>
         </Breadcrumbs>
     );
-}
+};
 
 export default Breadcrumb;

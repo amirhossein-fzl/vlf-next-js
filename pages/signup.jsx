@@ -1,18 +1,16 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import Head from 'next/head';
 
-export default function signin() {
+export default function signup() {
     return (
         <>
             <Head>
-                <title>ویرولرن - ورود</title>
-                <meta name="keywords" content="ویرولرن,ورود,ورود به ویرولرن" />
-                <meta name="description" content="برای دسترسی به تمامی بخش های وبسایت، وارد شوید !" />
-                <meta name="subject" content="ورود" />
+                <title>ویرولرن - ثبت نام کاربر جدید</title>
+                <meta name="keywords" content="ثبت نام,ویرولرن,ثبتنام,ثبت نام در ویرولرن,ثبتنام در ویرولرن,ویرولرن" />
+                <meta name="description" content="میخواهید در مجموعه ویرولرن ثبت نام کنید؟ فرم این صفحه را پر کنید" />
+                <meta name="subject" content="ثبت نام کاربر جدید" />
                 <meta name="language" content="FA" />
                 <meta name="robots" content="index, follow" />
             </Head>
@@ -24,7 +22,7 @@ export default function signin() {
                         <div className="card sm:block hidden bg-pink-500 shadow-lg w-full h-full rounded-3xl absolute transform rotate-12"></div>
 
                         <div className="relative w-full rounded-3xl px-6 py-4 !pb-6 bg-gray-100 shadow-[0px_0px_9px_6px_rgba(0,0,0,0.12)]">
-                            <h1 className="block mt-3 text-3xl text-gray-700 text-center font-semibold">ورود</h1>
+                            <h1 className="block mt-3 text-3xl text-gray-700 text-center font-semibold">ثبت نام</h1>
 
                             {/* Error Alert */}
                             {/* <div className="mt-10 bg-red-100 border-r-4 rounded-md border-red-500 text-red-700 p-4" role="alert">
@@ -36,6 +34,10 @@ export default function signin() {
 
                             <div className="form mt-10">
                                 <div>
+                                    <TextField id="name" type="text" label="نام و نام خانوادگی" fullWidth={true} size="small" variant="outlined" />
+                                </div>
+
+                                <div className="mt-10">
                                     <TextField id="email" type="email" label="ایمیل" fullWidth={true} size="small" variant="outlined" />
                                 </div>
 
@@ -43,27 +45,21 @@ export default function signin() {
                                     <TextField id="password" type="password" label="کلمه عبور" fullWidth={true} size="small" variant="outlined" />
                                 </div>
 
-                                <div className="mt-7">
-                                    <FormControlLabel control={<Checkbox className="text-sm !select-none" />} label="مرا به خاطر بسپار" />
-                                </div>
-
-                                <div className="w-full text-right mt-4">
-                                    <a className="link text-sm" href="#">
-                                        کلمه عبور خود را فراموش کردید؟
-                                    </a>
+                                <div className="mt-10">
+                                    <TextField id="password_confirmation" type="password" label="تکرار کلمه عبور" fullWidth={true} size="small" variant="outlined" />
                                 </div>
 
                                 <div className="mt-7">
                                     <Button color="primary" size="large" variant="contained" fullWidth={true}>
-                                        ورود
+                                        ثبت نام
                                     </Button>
                                 </div>
 
                                 <div className="mt-9">
                                     <div className="flex justify-center items-center">
-                                        <label className="ml-2">هنوز ثبت نام نکردید؟</label>
+                                        <label className="ml-2">قبلا ثبت نام کرده اید؟</label>
                                         <a href="#" className=" text-blue-500 transition duration-500 ease-in-out transform hover:-translate-x hover:scale-105">
-                                            ثبت نام کنید
+                                            وارد شوید
                                         </a>
                                     </div>
                                 </div>

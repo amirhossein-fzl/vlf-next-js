@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['IRANSans'],
+                aviny: ['Aviny'],
             },
             borderRadius: {
                 'theme': '8px',

@@ -22,7 +22,7 @@ const nav = [
     },
     {
         title: 'وبلاگ',
-        link: '#',
+        link: '/blog',
     },
     {
         title: 'درباره ما',
@@ -30,7 +30,7 @@ const nav = [
     },
     {
         title: 'تماس باما',
-        link: '#',
+        link: '/contact',
     },
 ];
 

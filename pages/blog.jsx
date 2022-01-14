@@ -19,6 +19,8 @@ import Rating from '@mui/material/Rating';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import StarBorderRoundedIcon from '@mui/icons-material/StarBorderRounded';
 import PostCard from '../components/PostCard';
+import PodCard from '../components/PodCard';
+import Grid from '@mui/material/Grid';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
@@ -146,6 +148,50 @@ export default function blog() {
 
                             <PostCard grid={{ lg: 4, md: 6 }} link="#" title="5 مورد از بهترین Vscode Extention ها برای توسعه دهندگان جاوااسکریپت" img="/img/posts/VS_Code_Extension.png" description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ" author={{ name: 'میلاد محمدی', link: '#' }} views={95000} />
                         </Row>
+
+                        <Grid container justifyContent="center" className="mt-10">
+                            <Button variant="contained" color="secondary">
+                                مشاهده بیشتر
+                            </Button>
+                        </Grid>
+
+                        <div className="flex items-center mt-20">
+                            <span className="bg-blue-500 w-8 h-1.5 rounded-md ml-3"></span>
+                            <h2 className="text-4xl text-gray-700 font-semibold font-aviny">پادکست های اخیر</h2>
+                        </div>
+
+                        <Row>
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/Asp_net_core5.png" link="#" title="ویژگی های جدید Asp.Net Core 5" />
+                            </Col>
+
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/nmvldt-logo.png" link="#" title="نکات مهم و کلیدی در طراحی لوگو" />
+                            </Col>
+                            
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/seo.png" link="#" title="مهم ترین تکنیک های سئو" />
+                            </Col>
+
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/social_network.png" link="#" title="چند نکته مهم برای امنیت در شبکه های اجتماعی" />
+                            </Col>
+
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/voice-assistant.png" link="#" title="دستیار صوتی چیست؟" />
+                            </Col>
+
+                            <Col lg={6}>
+                                <PodCard image="/img/posts/VS_Code_Extension.png" link="#" title="5 مورد از بهترین Vscode Extention ها برای توسعه دهندگان جاوااسکریپت" />
+                            </Col>
+                        </Row>
+
+                        <Grid container justifyContent="center" className="mt-10">
+                            <Button variant="contained" color="secondary">
+                                مشاهده بیشتر
+                            </Button>
+                        </Grid>
+                        
                     </Container>
                 </main>
 

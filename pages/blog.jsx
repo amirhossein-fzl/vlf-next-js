@@ -61,7 +61,7 @@ export default function blog() {
                                 </InputAdornment>
                             }
                             placeholder="بنویسید ..."
-                            classes={{ root: 'bg-gray-100 rounded-lg pr-4 pl-2 py-2 duration-300', focused: 'bg-transparent border border-blue-500' }}
+                            classes={{ root: 'bg-gray-100 border rounded-lg pr-4 pl-2 py-2 duration-300', focused: 'bg-transparent border border-blue-500' }}
                         />
                     </div>
 

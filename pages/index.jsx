@@ -33,62 +33,62 @@ export default function () {
         {
             title: 'هوش مصنوعی',
             icon: '/svg/categories/ai.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'اندروید',
             icon: '/svg/categories/android.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'سیستم ها مدیریت محتوا',
             icon: '/svg/categories/cms.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'ارز دیجیتال',
             icon: '/svg/categories/cryptocurrency.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'گرافیک',
             icon: '/svg/categories/graphic.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'جاوااسکریپت',
             icon: '/svg/categories/javascript.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'شبکه',
             icon: '/svg/categories/network.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'PHP',
             icon: '/svg/categories/php.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'پایتون',
             icon: '/svg/categories/python.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'استارتاپ و کسب و کار',
             icon: '/svg/categories/startup.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'رابط کاربری',
             icon: '/svg/categories/ui.svg',
-            link: '#',
+            link: '/category/id',
         },
         {
             title: 'برنامه نویسی وب',
             icon: '/svg/categories/web.svg',
-            link: '#',
+            link: '/category/id',
         },
     ];
 

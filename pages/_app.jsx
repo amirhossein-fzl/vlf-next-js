@@ -14,6 +14,7 @@ import theme from '../styles/theme';
 import '../styles/globals.scss';
 import '../styles/bootstrap-grid.scss';
 import '../styles/nprogress.css';
+import '../styles/icons.scss';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

@@ -19,6 +19,11 @@ const theme = createTheme({
             dark: '#fff',
             light: '#fff',
         },
+        red: {
+            main: 'rgba(239, 68, 68, 1)',
+            dark: 'rgb(248, 113, 113, 1)',
+            light: 'rgba(248, 113, 113, 1)',
+        },
     },
     typography: {
         fontFamily: 'IRANSans',

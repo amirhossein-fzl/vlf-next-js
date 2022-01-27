@@ -127,21 +127,21 @@ export default function () {
                     <Title title="جدید ترین دوره ها" />
                     <Container fluid="lg">
                         <Row className="mb-5">
-                            <CourseCard title="حل مسائل و تمرین های الگوریتم و فلوچارت" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/algoritm.png" link="#" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="حل مسائل و تمرین های الگوریتم و فلوچارت" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/algoritm.png" link="/course/id" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="آموزش گرافیک تبلیغاتی پیشرفته" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/graphic.png" link="#" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="آموزش گرافیک تبلیغاتی پیشرفته" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/graphic.png" link="/course/id" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="طراحی های خلاقانه رابط کاربری وبسایت (Html, Css, Jquery)" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/html-css-jquery.png" link="#" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="طراحی های خلاقانه رابط کاربری وبسایت (Html, Css, Jquery)" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/html-css-jquery.png" link="/course/id" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="برنامه نویس شی گرا در جاوااسکریپت" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/javascriptOOP.png" link="#" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="برنامه نویس شی گرا در جاوااسکریپت" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/javascriptOOP.png" link="/course/id" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="آموزش متریال بوت استرپ (mdbootstrap)" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/mdbootstrap.png" link="#" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="آموزش متریال بوت استرپ (mdbootstrap)" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/mdbootstrap.png" link="/course/id" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="آموزش امنیت در PHP" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/php-security.png" link="#" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="آموزش امنیت در PHP" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/php-security.png" link="/course/id" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="تحلیل و پیش بینی بورس در پایتون" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/Stock-analysis.png" link="#" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="تحلیل و پیش بینی بورس در پایتون" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/Stock-analysis.png" link="/course/id" teacher={{ name: 'میلاد محمدی', link: '#' }} price={250000} time="12:00" />
 
-                            <CourseCard title="آموزش Selenium در سی شارپ از صفر تا صد" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/seleniumc-sharp.png" link="#" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
+                            <CourseCard title="آموزش Selenium در سی شارپ از صفر تا صد" grid={{ lg: 3, md: 4, sm: 6 }} img="/img/products/seleniumc-sharp.png" link="/course/id" teacher={{ name: 'امیرحسین فضلی', link: '#' }} price={250000} time="12:00" />
                         </Row>
                         <Grid container justifyContent="center" className="mt-10">
                             <Button variant="outlined" color="secondary">

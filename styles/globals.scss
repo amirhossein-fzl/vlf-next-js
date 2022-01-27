@@ -171,6 +171,51 @@ footer {
     }
 }
 
+.post-body {
+
+    h2 {
+        @apply my-5;
+        @apply text-2xl font-semibold;
+    }
+    
+    p {
+        @apply text-base;
+        @apply leading-8;
+    }
+
+}
+
+.plyr {
+    --plyr-color-main: rgba(37, 99, 235, 1);
+    @apply rounded-theme;
+    @apply mt-10;
+}
+
+.season {
+    @apply flex;
+    @apply flex-col;
+    @apply sm:flex-row;
+    @apply items-center;
+    li {
+        @apply sm:border-r sm:border-solid sm:border-gray-300;
+        @apply sm:px-3;
+        @apply mt-3;
+        @apply sm:mt-0;
+        &:first-child {
+            border-right: none;
+            @apply pr-0;
+            @apply mt-0;
+        }
+        &:last-child {
+            span {
+                @apply text-[15px];
+                @apply font-medium;
+                @apply text-[#0089ff];
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .infos {
         margin-top: 50px;

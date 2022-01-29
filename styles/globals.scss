@@ -216,6 +216,35 @@ footer {
     }
 }
 
+.profile-items {
+    li {
+        @apply mt-2.5;
+        &:first-child {
+            @apply mt-0;
+        }
+
+        button {
+            // !rounded-theme block !w-full !bg-gray-100 !py-2 !px-2 !text-sm
+            @apply rounded-theme #{!important};
+            @apply block;
+            @apply w-full #{!important};
+            @apply bg-gray-100 #{!important};
+            @apply p-2 #{!important};
+            @apply text-sm #{!important};
+            @apply duration-300;
+            &:hover {
+                @apply bg-blue-500 #{!important};
+                @apply text-white #{!important};
+            }
+        }
+
+        .active {
+            @apply bg-blue-500 #{!important};
+            @apply text-white #{!important};
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .infos {
         margin-top: 50px;

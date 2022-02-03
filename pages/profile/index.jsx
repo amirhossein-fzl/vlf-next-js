@@ -39,60 +39,60 @@ export default function () {
                 <Container>
                     <Row className="!mt-28">
                         <Col lg={3}>
-                            {/* <StickyBox offsetTop={100} offsetBottom={20}> */}
-                            <Card elevation={2} className="p-3">
-                                <div className="flex flex-col justify-center items-center">
-                                    <Avatar src="/img/Amir-developer-avatar.jpg" sx={{ width: 70, height: 70 }} alt="Teacher Avatar" />
-                                    <span className="text-base mt-2 font-medium">امیرحسین فضلی</span>
-                                </div>
-                            </Card>
+                            <StickyBox offsetTop={100} offsetBottom={20}>
+                                <Card elevation={2} className="p-3">
+                                    <div className="flex flex-col justify-center items-center">
+                                        <Avatar src="/img/Amir-developer-avatar.jpg" sx={{ width: 70, height: 70 }} alt="Teacher Avatar" />
+                                        <span className="text-base mt-2 font-medium">امیرحسین فضلی</span>
+                                    </div>
+                                </Card>
 
-                            <Card elevation={2} className="p-3 mt-2">
-                                <ul className="profile-items">
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase className="active" TouchRippleProps={{ classes: { ripple: 'text-white' } }}>
-                                                داشبورد
-                                            </ButtonBase>
-                                        </NextLink>
-                                    </li>
+                                <Card elevation={2} className="p-3 mt-2">
+                                    <ul className="profile-items">
+                                        <li>
+                                            <NextLink href="/profile">
+                                                <ButtonBase className="active" TouchRippleProps={{ classes: { ripple: 'text-white' } }}>
+                                                    داشبورد
+                                                </ButtonBase>
+                                            </NextLink>
+                                        </li>
 
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ویرایش اطلاعات شخصی</ButtonBase>
-                                        </NextLink>
-                                    </li>
+                                        <li>
+                                            <NextLink href="/profile/edit">
+                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ویرایش اطلاعات شخصی</ButtonBase>
+                                            </NextLink>
+                                        </li>
 
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>دوره های خریداری شده</ButtonBase>
-                                        </NextLink>
-                                    </li>
+                                        <li>
+                                            <NextLink href="#">
+                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>دوره های خریداری شده</ButtonBase>
+                                            </NextLink>
+                                        </li>
 
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ذخیره شده ها</ButtonBase>
-                                        </NextLink>
-                                    </li>
+                                        <li>
+                                            <NextLink href="#">
+                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ذخیره شده ها</ButtonBase>
+                                            </NextLink>
+                                        </li>
 
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>پرسش و پاسخ ها</ButtonBase>
-                                        </NextLink>
-                                    </li>
+                                        <li>
+                                            <NextLink href="#">
+                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>پرسش و پاسخ ها</ButtonBase>
+                                            </NextLink>
+                                        </li>
 
-                                    <li>
-                                        <NextLink href="#">
-                                            <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>مدارک درخواستی</ButtonBase>
-                                        </NextLink>
-                                    </li>
-                                </ul>
+                                        <li>
+                                            <NextLink href="#">
+                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>مدارک درخواستی</ButtonBase>
+                                            </NextLink>
+                                        </li>
+                                    </ul>
 
-                                <Button color="error" size="small" variant="contained" className="!w-full !mt-3">
-                                    خروج از حساب کاربری
-                                </Button>
-                            </Card>
-                            {/* </StickyBox> */}
+                                    <Button color="error" size="small" variant="contained" className="!w-full !mt-3">
+                                        خروج از حساب کاربری
+                                    </Button>
+                                </Card>
+                            </StickyBox>
                         </Col>
 
                         <Col lg={9}>

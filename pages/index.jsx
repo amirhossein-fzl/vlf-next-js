@@ -18,6 +18,7 @@ import PostCard from '../components/PostCard';
 import EmailSvg from '../public/svg/EmailSvg';
 import TextField from '@mui/material/TextField';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 // import dynamic from 'next/dynamic';
 // const Slider = dynamic(() => import('../components/Slider.jsx').then((module) => module.default), { ssr: false });
 
@@ -177,9 +178,11 @@ export default function () {
                                         از تیر ماه سال 98 یادگیری برنامه نویسی را شروع کردم. از سال 98 تا الان، به تسلط بالایی در برنامه نویسی رسیدم و اکنون در خدمت شما با مجموعه ویرولرن هستم تا دانشم را به شما انتقال دهم. از فعالیت در مجموعه ویرولرن حس خوبی دارم.
                                     </Typography>
                                 </Grid>
-                                <Button className="!mt-10" color="primary" variant="contained">
-                                    مشاهده صفحه مدرس
-                                </Button>
+                                <Link href="/teacher/id">
+                                    <Button className="!mt-10" color="primary" variant="contained">
+                                        مشاهده صفحه مدرس
+                                    </Button>
+                                </Link>
                             </Col>
 
                             <Col lg={8} sm={12} xs={12} className="pr-10 mt-10 lg:mt-0">

@@ -65,7 +65,7 @@ export default function Course() {
             <Header />
 
             <main>
-                <Container className="lg:!w-full lg:!max-w-full" >
+                <Container className="lg:!w-full lg:!max-w-full">
                     <h1 className="mt-10 text-center text-3xl font-semibold">آموزش تحلیل بورس با پایتون</h1>
 
                     <Grid container justifyContent="center" className="mt-4">
@@ -174,9 +174,11 @@ export default function Course() {
                                         <Avatar src="/img/Amir-developer-avatar.jpg" className="mt-5" sx={{ width: 70, height: 70 }} alt="Teacher Avatar" />
                                         <span className="text-sm mt-1.5 font-medium">امیرحسین فضلی</span>
                                         <p className="text-[15px] text-center mt-2.5">امیرحسین فضلی هستم، عضو هیئت مدیره مجموعه ویرولرن و فعال در حوزه بلاکچین و برنامه نویسی وب.</p>
-                                        <Button variant="outlined" className="!mt-5" color="primary" startIcon={<i className="fa-duotone fa-chalkboard-user"></i>}>
-                                            صفحه مدرس
-                                        </Button>
+                                        <NextLink href="teacher/id">
+                                            <Button variant="outlined" className="!mt-5" color="primary" startIcon={<i className="fa-duotone fa-chalkboard-user"></i>}>
+                                                صفحه مدرس
+                                            </Button>
+                                        </NextLink>
                                     </div>
                                 </Card>
                             </StickyBox>

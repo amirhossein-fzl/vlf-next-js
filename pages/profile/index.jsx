@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
 import ProfileLayout from '../../components/layouts/Profile';
 
-export default function Profile() {
+export default function () {
     return (
         <>
             <Head>

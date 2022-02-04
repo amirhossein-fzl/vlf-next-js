@@ -14,9 +14,11 @@ import StickyBox from 'react-sticky-box';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import ButtonBase from '@mui/material/ButtonBase';
-import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
+import clsx from 'clsx';
+import { useRouter } from "next/router";
 
 export default function ({ children, }) {
+    const Router = useRouter();
     return (
         <>
             <Header />
@@ -47,7 +49,7 @@ export default function ({ children, }) {
                                     <ul className="profile-items">
                                         <li>
                                             <NextLink href="/profile">
-                                                <ButtonBase className="active" TouchRippleProps={{ classes: { ripple: 'text-white' } }}>
+                                                <ButtonBase className={clsx(Router.pathname == '/profile' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>
                                                     داشبورد
                                                 </ButtonBase>
                                             </NextLink>
@@ -55,7 +57,7 @@ export default function ({ children, }) {
 
                                         <li>
                                             <NextLink href="/profile/edit">
-                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ویرایش اطلاعات شخصی</ButtonBase>
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/edit' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ویرایش اطلاعات شخصی</ButtonBase>
                                             </NextLink>
                                         </li>
 

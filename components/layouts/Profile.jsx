@@ -93,7 +93,7 @@ export default function ({ children, }) {
                             </StickyBox>
                         </Col>
 
-                        <Col lg={9}>
+                        <Col lg={9} className="!mt-5 lg:!mt-0">
                             <Card elevation={3} className="px-4 py-6">
                                 {children}
                             </Card>

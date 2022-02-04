@@ -36,21 +36,21 @@ export default function () {
                 <h2 className="text-2xl font-medium text-center">ویرایش حساب کاربری</h2>
 
                 <Row className="!mt-10">
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <TextField fullWidth label="نام و نام خانوادگی" defaultValue="امیرحسین فضلی" id="name" />
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <TextField fullWidth label="ایمیل" defaultValue="amirhossein95b@gmail.com" id="email" />
                     </Col>
                 </Row>
 
                 <Row className="!mt-10">
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <TextField fullWidth inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} label="شماره موبایل" defaultValue="09142275361" />
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <TextField fullWidth label="نام کاربری" defaultValue="amirhossein95b" id="username" />
                     </Col>
                 </Row>
@@ -58,7 +58,7 @@ export default function () {
                 <TextField id="bio" className="!mt-10" fullWidth label="بیوگرافی" multiline rows={4} value="امیرحسین فضلی هستم، عضو هیئت مدیره مجموعه ویرولرن و فعال در حوزه بلاکچین و برنامه نویسی وب." />
 
                 <Row className="!mt-10">
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <FormControl>
                             <FormLabel id="demo-radio-buttons-group-label">جنسیت</FormLabel>
                             <RadioGroup row aria-labelledby="demo-radio-buttons-group-label" defaultValue="female" name="radio-buttons-group">
@@ -69,7 +69,7 @@ export default function () {
                         </FormControl>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} className="!mt-5 sm:!mt-0">
                         <LocalizationProvider dateAdapter={JalaliUtils} locale="fa">
                             <MobileDatePicker
                                 label="تاریخ تولد"

@@ -62,8 +62,8 @@ export default function ({ children, }) {
                                         </li>
 
                                         <li>
-                                            <NextLink href="#">
-                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>دوره های خریداری شده</ButtonBase>
+                                            <NextLink href="/profile/buyed-courses">
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/buyed-courses' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>دوره های خریداری شده</ButtonBase>
                                             </NextLink>
                                         </li>
 

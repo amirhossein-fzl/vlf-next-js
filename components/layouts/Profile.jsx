@@ -68,20 +68,20 @@ export default function ({ children, }) {
                                         </li>
 
                                         <li>
-                                            <NextLink href="#">
-                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ذخیره شده ها</ButtonBase>
+                                            <NextLink href="/profile/saved">
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/saved' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>ذخیره شده ها</ButtonBase>
                                             </NextLink>
                                         </li>
 
                                         <li>
-                                            <NextLink href="#">
-                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>پرسش و پاسخ ها</ButtonBase>
+                                            <NextLink href="/profile/questions-answers">
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/questions-answers' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>پرسش و پاسخ ها</ButtonBase>
                                             </NextLink>
                                         </li>
 
                                         <li>
-                                            <NextLink href="#">
-                                                <ButtonBase TouchRippleProps={{ classes: { ripple: 'text-white' } }}>مدارک درخواستی</ButtonBase>
+                                            <NextLink href="/profile/requested-evidence">
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/requested-evidence' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>مدارک درخواستی</ButtonBase>
                                             </NextLink>
                                         </li>
                                     </ul>

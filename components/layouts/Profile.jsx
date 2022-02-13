@@ -84,6 +84,12 @@ export default function ({ children, }) {
                                                 <ButtonBase className={clsx(Router.pathname == '/profile/requested-evidence' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>مدارک درخواستی</ButtonBase>
                                             </NextLink>
                                         </li>
+
+                                        <li>
+                                            <NextLink href="/profile/sequrity-settings">
+                                                <ButtonBase className={clsx(Router.pathname == '/profile/sequrity-settings' && 'active')} TouchRippleProps={{ classes: { ripple: 'text-white' } }}>تنظیمات امنیتی</ButtonBase>
+                                            </NextLink>
+                                        </li>
                                     </ul>
 
                                     <Button color="error" size="small" variant="contained" className="!w-full !mt-3">
